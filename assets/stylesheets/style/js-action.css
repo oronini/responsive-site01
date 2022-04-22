@@ -1,0 +1,147 @@
+@charset "UTF-8";
+  /* -------------------------------------------------
+    .js
+  ---------------------------------------------------- */
+
+
+  .up{
+    opacity: 0;
+    transition: all 1s ease;
+  }
+
+.up.show {
+    opacity: 1;
+    transform: none;
+  }
+
+.op{
+    transform: translate(0, 100px);
+  }
+
+.js-color {
+  color: #000;
+}
+
+.js-bg {
+  background-color: #000 !important;
+}
+
+.js-bg2 {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+
+
+
+
+
+
+
+    /* 
+  hamburger(ハンバーガーアイコン)
+  =================================== */
+
+  .l-hamburger {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 300;
+  }
+
+  .l-hamburger__line {
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    right: 0;
+    background-color: #fff;
+    transition: all 0.5s;
+  }
+
+  .l-hamburger__line--1 {
+    top: 1px;
+  }
+
+  .l-hamburger__line--2 {
+    top: 13px;
+  }
+
+  .l-hamburger__line--3 {
+    top: 25px;
+  }
+
+  /*ハンバーガーがクリックされたら*/
+  .open .l-hamburger__line--1 {
+    transform: rotate(-45deg);
+    top: 11px;
+  }
+
+  .open .l-hamburger__line--2 {
+    opacity: 0;
+  }
+
+  .open .l-hamburger__line--3 {
+    transform: rotate(45deg);
+    top: 11px;
+  }
+
+/* 
+l-hamburger__nav(ナビ)
+=================================== */
+.l-hamburger__nav {
+  position: fixed;
+  right: -100%; 
+  top: 0;
+  width: 60%; 
+  height: 100vh;
+  background-color: rgb(138, 137, 137);
+  transition: all 0.5s;
+  z-index: 200;
+  overflow-y: auto; /* メニューが多くなったらスクロールできるように */
+  padding: 50px;
+}
+
+.open .l-hamburger__nav {
+  right: 0;
+}
+
+
+/* 
+black-bg(ハンバーガーメニュー解除用bg)
+=================================== */
+.black-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  background-color: #000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.open .black-bg {
+  opacity: 0.3;
+  visibility: visible;
+}
+
+.l-hamburger__list {
+  color: #fff;
+  font-size: 24px;
+  margin-top: 35px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.l-hamburger__list:first-child {
+  margin-top: 0;
+}
+

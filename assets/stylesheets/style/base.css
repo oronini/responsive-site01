@@ -1,0 +1,255 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #f1efef;
+}
+
+/* ===================================
+  header--pc
+=================================== */
+.l-header__hamburger {
+  display: none !important;
+}
+
+.l-header__menu {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 70px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+.l-header__logo {
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+}
+
+.l-header__navList {
+  display: flex;
+  font-size: 22px;
+  font-size: 2.2rem;
+}
+
+.l-header__list:nth-child(n + 2) {
+  margin-left: 30px;
+}
+
+.l-header__list {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.l-header__list:hover {
+  color: #b8b7b7;
+}
+
+.l-main__scrollTop {
+  position: fixed;
+  bottom: 55px;
+  right: 45px;
+  width: 70px;
+  height: 70px;
+  padding: 11px;
+  border-radius: 3px;
+  background-color: rgb(175, 170, 170, 0.5);
+  cursor: pointer;
+}
+
+/* ===================================
+  top
+=================================== */
+.l-top {
+  position: relative;
+}
+
+.l-top__image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: top left;
+}
+
+.l-top__title {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  margin: auto;
+  color: #fff;
+  font-size: 60px;
+  font-size: 6rem;
+  text-align: center;
+}
+
+.l-footer {
+  background-color: #3f3e3e;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-size: 11px;
+}
+
+/* ===================================
+  section01
+=================================== */
+.p-section01 {
+  padding: 100px 50px;
+}
+
+.p-section01__imageList {
+  margin-top: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.p-section01__imageList > li:nth-child(n + 3) {
+  margin-top: 30px;
+}
+
+.p-section01__list.--long {
+  width: 60%;
+}
+
+.p-section01__list.--short {
+  width: 35%;
+}
+
+.p-section01__image {
+  object-fit: cover;
+  border-radius: 10px;
+  width: 100%;
+  height: 350px;
+}
+
+/* ===================================
+  section02
+=================================== */
+.p-section02 {
+  background-color: rgb(3, 3, 3);
+  padding: 100px 50px;
+}
+.p-section02__contentList {
+  margin-top: 150px;
+}
+
+.p-section02__list {
+  width: 100%;
+  display: flex;
+}
+
+.p-section02__list:nth-child(n + 2) {
+  margin-top: 80px;
+}
+
+.p-section02__list:nth-child(2) {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.p-section02__img {
+  width: 400px;
+  margin-right: 20px;
+}
+
+
+.p-section02__list:nth-child(2) > .p-section02__img {
+  margin: 0 0 0 20px;
+} 
+
+.p-section02__items {
+  padding-top: 10px;
+}
+
+.p-section02__link {
+  margin-top: 50px;
+}
+
+.p-section02__link:hover {
+  background: #666;
+}
+
+.p-section02__link {
+  display: inline-block;
+  padding: 15px 20px;
+  border-radius: 3px;
+  background-color: #f77511;
+  color: #fff;
+  font-size: 12px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.p-section02__text {
+  margin-top: 20px;
+  color: #848484;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.p-section02__title {
+  color: #c9c9c9;
+  font-size: 20px;
+  font-size: 2rem;
+}
+
+/* ===================================
+  section03
+=================================== */
+.p-section03 {
+  padding: 100px 50px;
+}
+
+.p-section03__contentList {
+  margin-top: 150px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.p-section03__list {
+  text-align: center;
+  width: 33.3%;
+  padding: 0 20px;
+}
+
+.p-section03__list:nth-child(n + 4) {
+  margin-top: 40px;
+}
+
+.p-section03__img {
+  width: 60px;
+  margin: 0 auto 0;
+}
+
+.p-section03__text {
+  margin-top: 20px;
+  color: #848484;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.p-section03__title {
+  margin-top: 30px;
+  color: #5a5a5a;
+  font-size: 20px;
+  font-size: 2rem;
+}
+

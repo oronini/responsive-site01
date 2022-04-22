@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./assets/stylesheets/reset.css" />
+    <link rel="stylesheet" href="./assets/stylesheets/style/base.css" />
+    <link rel="stylesheet" href="./assets/stylesheets/style/components.css" />
+    <link rel="stylesheet" href="./assets/stylesheets/style/max-768_sp.css" />
+    <link rel="stylesheet" href="./assets/stylesheets/style/js-action.css" />
+    <title>responsive-site01</title>
+  </head>
+  <body>
+    <div>
+      <!-- .l-header -->
+      <header class="l-header">
+        <div class="l-header__hamburger">
+          <div id="nav-wrapper" class="l-header__wrapper">
+            <div class="l-hamburger" id="js-hamburger">
+              <span class="l-hamburger__line l-hamburger__line--1"></span>
+              <span class="l-hamburger__line l-hamburger__line--2"></span>
+              <span class="l-hamburger__line l-hamburger__line--3"></span>
+            </div>
+            <nav class="l-hamburger__nav">
+                <ul  >
+                  <li class="l-hamburger__list" id="js-goToTop">
+                    TOP
+                  </li>
+                  <li class="l-hamburger__list" id="js-goToSection01">
+                    SECTION01
+                  </li>
+                  <li class="l-hamburger__list"id="js-goToSection02">
+                    SECTION02
+                  </li>
+                  <li class="l-hamburger__list" id="js-goToSection03">
+                    SECTION03
+                  </li>
+                </ul>
+              </nav>
+            <div class="black-bg" id="js-black-bg"></div>
+          </div>
+          </div>
+        <div class="l-header__menu">
+          <div class="l-header__logo">
+            <img src="./assets/images/logo_b.png" alt="ロゴ" />
+          </div>
+          <nav class="l-header__nav">
+            <ul class="l-header__navList" id="js-scrollFontColor">
+              <li class="l-header__list" id="js-topBtn">
+                TOP
+              </li>
+              <li class="l-header__list" id="js-section01" data-current="'js-section01Area'">
+                SECTION01
+              </li>
+              <li class="l-header__list" id="js-section02" data-current="854">
+                SECTION02
+              </li>
+              <li class="l-header__list" id="js-section03" data-current="854">
+                SECTION03
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- .l-top -->
+      <div class="l-top" id="js-top">
+        <img
+          class="l-top__image"
+          src="./assets/images/top.jpg"
+          alt="top"
+        />
+        <h1 class="l-top__title">Responsive Site</h1>
+      </div>
+      <!-- .l-main -->
+      <main class="l-main">
+        <div class="l-main__scrollTop up op" id="js-goTop">
+          <img src="assets/images/arrow.png" alt="上矢印">
+        </div>
+        <!-- .p-section01 -->
+        <section class="p-section01" id="js-section01Area" data-current="854">
+          <div class="c-blockItems">
+            <h2 class="c-blockItems__title">SECTION01</h2>
+            <p class="c-blockItems__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, quam quos nemo error adipisci voluptatem ab consequuntur quasi doloremque molestias architecto minima mollitia assumenda modi inventore pariatur laborum neque perspiciatis?
+            </p>
+          </div>
+          <ul class="p-section01__imageList">
+            <li class="p-section01__list --short">
+              <img
+              class="p-section01__image"
+              src="./assets/images/con013.jpg"
+              alt="Example"
+              />
+            </li>
+            <li class="p-section01__list --long">
+              <img
+              class="p-section01__image"
+              src="./assets/images/con011.jpg"
+              alt="Example"
+              />
+            </li>
+            <li class="p-section01__list --long">
+              <img
+              class="p-section01__image"
+              src="./assets/images/con012.jpg"
+              alt="Example"
+              />
+            </li>
+            <li class="p-section01__list --short">
+              <img
+              class="p-section01__image"
+              src="./assets/images/con014.jpg"
+              alt="Example"
+              />
+            </li>
+          </ul>
+        </section>
+        <!-- .p-section02 -->
+        <section class="p-section02" id="js-section02Area">
+          <div class="c-blockItems">
+            <h2 class="c-blockItems__title">SECTION02</h2>
+            <p class="c-blockItems__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse mollitia maxime accusantium iure, omnis voluptates autem, eaque provident vel cupiditate quis similique ratione tenetur ab, beatae hic animi sed quibusdam.
+            </p>
+          </div>
+          <ul class="p-section02__contentList">
+            <li class="p-section02__list">
+              <img
+                class="p-section02__img"
+                src="./assets/images/con002.jpg"
+                alt="Example"
+              />
+              <div class="p-section02__items">
+                <h3 class="p-section02__title">
+                  The quick, brown fox jumps over a lazy dog. 
+                </h3>
+                <p class="p-section02__text">
+                  The European languages are members of the same family. Their separate existence is a myth.
+                </p>
+                <a class="p-section02__link" href="#">MORE</a>
+              </div>
+            </li>
+            <li class="p-section02__list">
+              <img
+                class="p-section02__img"
+                src="./assets/images/con001.jpg"
+                alt="Example"
+              />
+              <div class="p-section02__items">
+                <h3 class="p-section02__title">
+                  The quick, brown fox jumps over a lazy dog. 
+                </h3>
+                <p class="p-section02__text">
+                  For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words.
+                </p>
+                <a class="p-section02__link" href="#">MORE</a>
+              </div>
+            </li>
+            <li class="p-section02__list">
+              <img
+                class="p-section02__img"
+                src="./assets/images/con003.jpg"
+                alt="Example"
+              />
+              <div class="p-section02__items">
+                <h3 class="p-section02__title">
+                  The quick, brown fox jumps over a lazy dog. 
+                </h3>
+                <p class="p-section02__text">
+                  Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.
+                </p>
+                <a class="p-section02__link" href="#">MORE</a>
+              </div>
+            </li>
+          </ul>
+        </section>        
+        <!-- .p-section03 -->
+        <section class="p-section03" id="js-section03Area">
+          <div class="c-blockItems">
+            <h2 class="c-blockItems__title">SECTION03</h2>
+            <p class="c-blockItems__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum quos impedit nobis error deleniti sunt praesentium, suscipit cupiditate facere, ex explicabo voluptatem aliquid nesciunt atque quisquam exercitationem tempore ratione eum.
+            </p>
+          </div>
+          <ul class="p-section03__contentList">
+            <li class="p-section03__list">
+              <div class="p-section03__img">
+                <img src="./assets/images/icon01.png" alt="icon" />
+              </div>
+              <h3 class="p-section03__title">Example</h3>
+              <p class="p-section03__text">
+                Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.
+              </p>
+            </li>
+            <li class="p-section03__list">
+              <div class="p-section03__img">
+                <img src="./assets/images/icon02.png" alt="icon" />
+              </div>
+              <h3 class="p-section03__title">Example</h3>
+              <p class="p-section03__text">
+                Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.
+              </p>
+            </li>
+            <li class="p-section03__list">
+              <div class="p-section03__img">
+                <img src="./assets/images/icon03.png" alt="icon" />
+              </div>
+              <h3 class="p-section03__title">Example</h3>
+              <p class="p-section03__text">
+                Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.
+              </p>
+            </li>
+            <li class="p-section03__list">
+              <div class="p-section03__img">
+                <img src="./assets/images/icon04.png" alt="icon" />
+              </div>
+              <h3 class="p-section03__title">Example</h3>
+              <p class="p-section03__text">
+                Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.
+              </p>
+            </li>
+            <li class="p-section03__list">
+              <div class="p-section03__img">
+                <img src="./assets/images/icon05.png" alt="icon" />
+              </div>
+              <h3 class="p-section03__title">Example</h3>
+              <p class="p-section03__text">
+                Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.
+              </p>
+            </li>
+            <li class="p-section03__list">
+              <div class="p-section03__img">
+                <img src="./assets/images/icon06.png" alt="icon" />
+              </div>
+              <h3 class="p-section03__title">Example</h3>
+              <p class="p-section03__text">
+                Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.
+              </p>
+            </li>
+          </ul>
+        </section>
+      </main>
+      <footer class="l-footer">
+        <p class="l-footer__text">
+          <small>&copy; Example 2022-04</small>
+        </p>
+      </footer>
+    </div>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
